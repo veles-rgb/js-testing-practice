@@ -1,10 +1,14 @@
 // jest.js
 
-// Capitalize function
+// capitalize
 function capitalize(str) {
-    const newStr = str.charAt(0).toUpperCase() + str.slice(1);
-    return newStr;
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+// reverseString
+function reverseString(str) {
+    return str.split('').reverse().join('');
 }
 
 // Exports
-export { capitalize };
+export { capitalize, reverseString };
