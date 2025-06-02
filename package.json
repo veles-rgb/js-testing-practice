@@ -1,7 +1,24 @@
 {
-  "devDependencies": {
-    "@babel/core": "^7.27.4",
-    "@babel/preset-env": "^7.27.2",
-    "babel-jest": "^30.0.0-beta.3"
+  "name": "js-testing-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veles-rgb/js-testing-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/veles-rgb/js-testing-practice/issues"
+  },
+  "homepage": "https://github.com/veles-rgb/js-testing-practice#readme",
+  "dependencies": {
+    "jest": "^29.7.0"
   }
 }
