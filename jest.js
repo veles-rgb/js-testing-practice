@@ -85,5 +85,30 @@ function caesarCipher(str, shiftFactor) {
     return newStr;
 };
 
+// analyzeArray
+function analyzeArray(arr) {
+    // Average
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    const average = sum / arr.length;
+    // min
+    const min = Math.min(...arr);
+    // max
+    const max = Math.max(...arr);
+    // length
+    const length = arr.length;
+    // Object
+    const object = {
+        average: average,
+        min: min,
+        max: max,
+        length: length
+    };
+
+    return object;
+}
+
 // Exports
-export { capitalize, reverseString, calculator, caesarCipher };
+export { capitalize, reverseString, calculator, caesarCipher, analyzeArray };

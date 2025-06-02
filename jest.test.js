@@ -1,7 +1,7 @@
 // jest.test.js
 
 // Imports
-import { capitalize, reverseString, calculator, caesarCipher } from "./jest.js";
+import { capitalize, reverseString, calculator, caesarCipher, analyzeArray } from "./jest.js";
 
 // capitalize test
 test('First letter capitalized', () => {
@@ -61,4 +61,15 @@ test("Caesar Cipher", () => {
     const result = caesarCipher(str, shiftFactor);
     console.log(result);
     expect(result).toBe("ROVVY, Gybvn!");
+});
+
+// analyzeArray test
+test("Analyze Array", () => {
+    const object = analyzeArray([1, 8, 3, 4, 2, 6]);
+    expect(object).toEqual({
+        average: 4,
+        min: 1,
+        max: 8,
+        length: 6
+    });
 });
